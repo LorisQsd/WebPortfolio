@@ -719,8 +719,7 @@ body {
     }
 
     .divider:nth-child(2) {
-        position: relative;
-        top: 30px;
+        display: none;
     }
 
     /* ABOUT RESP S */
