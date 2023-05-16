@@ -714,11 +714,13 @@ body {
         padding: 0;
         height: 100vh;
         gap: 4rem;
+        position: relative;
+        top: 50px;
     }
 
     /* ABOUT RESP S */
     .about, .skills {
-        padding: 0 2.5rem 3rem 2.5rem;
+        padding: 2rem 2.5rem 3rem 2.5rem;
     }
     .about__content {
         flex-direction: column;
