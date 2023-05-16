@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loris QUESADO - Web Portfolio</title>
+
+    <!-- Google font : Poppins & Source Serif Pro & Londrina Outline-->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+
+    <!-- Icones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Reset Meyer -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#" class="header__logo-link"><img src="../images/header/sign4.png" alt="Logo" class="header__logo"></a>
+            <nav class="header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#home-section" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#about-section" class="menu__link">A propos</a></li>
+                    <li class="menu__item"><a href="#skills-section" class="menu__link">Compétences</a></li>
+                    <li class="menu__item"><a href="#portfolio-section" class="menu__link">Portfolio</a></li>
+                </ul>
+            </nav>
+            <a href="#contact-section" class="header__contact-link">Contact</a>
+        </header>
+        <main class="main">
+            <section class="home" id="home-section">
+                <div class="home__left">
+                    <h2 class="home__subtitle">Hey,</h2>
+                    <h1 class="home__title">Je suis <span>Loris QUESADO</span></h1>
+                    <h2 class="home__subtitle">Développeur Web - Javascript</h2>
+                </div>
+                <div class="home__right">
+                    <div class="home__logo">
+                        <img src="../images/header/otter.png" alt="otter" class="otter-img">
+                        <img src="../images/header/rotate_white.png" alt="Rounded Text" class="rounded-text">
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+            
+            <section class="about" id="about-section">
+                <h2 class="main__title">À propos</h2>
+                <div class="about__content">
+                    <div class="content-text">
+                        <h3 class="main__subtitle">D'agent immobilier à Développeur web javascript</h3>
+                        <p class="about__paragraph">Depuis mes années lycée, l'informatique m'a fortement attiré, c'est au fil du temps que j'ai cultivé cette passion et après avoir travaillé pendant un peu plus de 7 ans en tant que conseiller immobilier, j'ai pris la décision de me reconvertir dans le développement web spécialisé javascript.
+                        </p>
+                    </div>
+                    <button class="btn-cv"><a href="#" class="link-cv" target="_blank" title="Pas encore disponible">Télécharger CV<br><i class="bi bi-box-arrow-down"></i></a></button>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="skills" id="skills-section">
+                <h2 class="main__title">Compétences</h2>
+                <h3 class="main__subtitle">Hard <span>Skills</span></h3>
+
+                <ul class="hard-skills__list">
+                    <li class="hard-skills__item">
+                        <img src="../images/main/HTML5.png" alt="Logo HTML5" class="hard-skills__img">
+                        <div class="skills__progress">
+                            <div class="progress__text">
+                                <p class="skills__paragraph">HTML5</p>
+                                <p class="skills__paragraph">75 %</p>
+                            </div>
+                            <span class="progress-bar progress-bar--html"></span>
+                        </div>
+                    </li>
+                    <li class="hard-skills__item">
+                        <img src="../images/main/CSS3.png" alt="Logo CSS3" class="hard-skills__img">
+                        <div class="skills__progress">
+                            <div class="progress__text">
+                                <p class="skills__paragraph">CSS3</p>
+                                <p class="skills__paragraph">70 %</p>
+                            </div>
+                            <span class="progress-bar progress-bar--css"></span>
+                        </div>
+                    </li>
+                    <li class="hard-skills__item">
+                        <img src="../images/main/JS.png" alt="Logo Javascript" class="hard-skills__img">
+                        <div class="skills__progress">
+                            <div class="progress__text">
+                                <p class="skills__paragraph">Javascript</p>
+                                <p class="skills__paragraph">30 %</p>
+                            </div>
+                            <span class="progress-bar progress-bar--javascript"></span>
+                        </div>
+                    </li>
+                    <li class="hard-skills__item">
+                        <img src="../images/main/bootstrap.png" alt="Logo Bootstrap" class="hard-skills__img">
+                        <div class="skills__progress">
+                            <div class="progress__text">
+                                <p class="skills__paragraph">Bootstrap</p>
+                                <p class="skills__paragraph">50 %</p>
+                            </div>
+                            <span class="progress-bar progress-bar--bootstrap"></span>
+                        </div>
+                    </li>
+                </ul>
+
+                <h3 class="main__subtitle">Soft <span>Skills</span></h3>
+                <ul class="soft-skills__list">
+                    <li class="soft-skills__item">
+                        <img src="../images/main/autonomy.png" alt="Autonomie" class="soft-skills_img">
+                        <p class="skills__paragraph">Autonomie</p>
+                    </li>
+                    <li class="soft-skills__item">
+                        <img src="../images/main/teamwork.png" alt="Travail d'équipe" class="soft-skills_img">
+                        <p class="skills__paragraph">Travail d'équipe</p>
+                    </li>
+                    <li class="soft-skills__item">
+                        <img src="../images/main/adaptability.png" alt="Adaptabilité" class="soft-skills_img">
+                        <p class="skills__paragraph">Adaptabilité</p>
+                    </li>
+                    <li class="soft-skills__item">
+                        <img src="../images/main/discipline.png" alt="Discipline" class="soft-skills_img">
+                        <p class="skills__paragraph">Discipline</p>
+                    </li>
+                    <li class="soft-skills__item">
+                        <img src="../images/main/curiosity.png" alt="Curiosité" class="soft-skills_img">
+                        <p class="skills__paragraph">Curiosité</p>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="experience">
+                <h2 class="main__title">Expérience</h2>
+                <div class="experience__timeline">
+                    <div class="experience__container first-exp">
+                        <p class="experience__date"><i class="bi bi-clock"></i> 2013 à 2015</p>
+                        <h3 class="experience__title">Lycée Léonard de Vinci - St Witz</h3>
+                        <p class="experience__paragraph">Diplôme du Baccalauréat Technologique - <strong>Mention Très Bien</strong></p>
+                    </div>
+
+                    <div class="experience__container second-exp">
+                        <p class="experience__date"><i class="bi bi-clock"></i> 2015 à 2017</p>
+                        <h3 class="experience__title">Ecole Suptertiaire - Paris (10e) - <strong>Alternance</strong></h3>
+                        <p class="experience__paragraph">Diplôme du BTS Professions Immobilières - <strong>Mention Bien</strong></p>
+                    </div>
+
+                    <div class="experience__container third-exp">
+                        <p class="experience__date"><i class="bi bi-clock"></i> Novembre 2015 à Juillet 2017</p>
+                        <h3 class="experience__title">NJ CONSEIL - Laforêt Immobilier </h3>
+                        <p class="experience__paragraph">Conseiller Immobilier - <strong>Transaction Locative</strong></p>
+                    </div>
+
+                    <div class="experience__container fourth-exp">
+                        <p class="experience__date"><i class="bi bi-clock"></i> Juillet 2017 à Février 2023</p>
+                        <h3 class="experience__title">NJ CONSEIL - Laforêt Immobilier </h3>
+                        <p class="experience__paragraph">Conseiller Immobilier - <strong>Transaction Vente</strong></p>
+                    </div>
+
+                    <div class="experience__container fifth-exp">
+                        <p class="experience__date"><i class="bi bi-clock"></i> Mai 2023 à ...</p>
+                        <h3 class="experience__title">Ecole O'Clock</h3>
+                        <p class="experience__paragraph">Stagiaire - <strong>Développeur Web Javascript</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="portfolio" id="portfolio-section">
+                <h2 class="main__title">Portfolio</h2>
+                <div class="portfolio__container">
+                    <div class="card">
+                        <a href="../portfolio/FFVII/html/index.html" class="card__link" target="_blank"><img src="../images/main/FFVII.PNG" alt="Site Web FFVII - Reproduction" class="card__img"></a>
+                        <a href="../portfolio/FFVII/html/index.html" class="card__link" target="_blank">
+                        <h3 class="main__subtitle">FFVII - Website Reproduction</h3></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="../portfolio/Onews/html/index.html" class="card__link" target="_blank"><img src="../images/main/onews.PNG" alt="Site Onews - Reproduction" class="card__img"></a>
+                        <a href="../portfolio/Onews/html/index.html" class="card__link" target="_blank">
+                        <h3 class="main__subtitle">Onews - Website Reproduction</h3></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://lorisqsd.github.io/PorscheLandingPage.js/" class="card__link" target="_blank"><img src="../images/main/porsche.PNG" alt="Porsche - Landing Page Animated" class="card__img"></a>
+                        <a href="https://lorisqsd.github.io/PorscheLandingPage.js/" class="card__link" target="_blank">
+                        <h3 class="main__subtitle">Porsche - Landing Page Animated</h3></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="https://lorisqsd.github.io/E-Sector/" class="card__link" target="_blank"><img src="../images/main/e-sector.PNG" alt="App Web pour une Agence Immobilière" class="card__img"></a>
+                        
+                        <a href="https://lorisqsd.github.io/E-Sector/" class="card__link" target="_blank">
+                        <h3 class="main__subtitle">E-Sector - App Web pour une agence immobilière</h3></a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="divider"></div>
+
+            <section class="contact" id="contact-section">
+                <h2 class="main__title">Contact</h2>
+                <form class="contact__form">
+                        <div class="contact__left">
+                            <h2 class="contact__title">Contactez-moi :</h2>
+                            <ul class="contact__list">
+                                <li class="contact__list-item"><a class="contact__link" href="https://www.facebook.com/loris.quesado" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                                <li class="contact__list-item"><a class="contact__link" href="https://www.instagram.com/loris.qsd/?hl=fr" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                                <li class="contact__list-item"><a class="contact__link" href="https://twitter.com/LorisQsdo" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                                <li class="contact__list-item"><a class="contact__link" href="https://www.youtube.com/channel/UCxBuT8bGOwwrMBy7RjDpE_w" target="_blank"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <fieldset class="contact__right">
+                            <legend class="form__legend">Envoyez-moi un message :</legend>
+                            <div class="input-group">
+                                <input type="text" class="form__input-text" placeholder="Nom:" maxlength="20" required>
+                                <input type="email" class="form__input-text" placeholder="Email:" maxlength="20" required>
+                                <textarea name="message" class="form__textarea" placeholder="Message:" maxlength="200" required></textarea>
+
+                            </div>
+
+                            <button class="form__btn">Envoyer</button>
+                        </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h2 class="main__title">Thanks for scrolling !</h2>
+
+            <p class="footer-paragraph">Copyright © 2023 - Tous droits réservés à Loris QUESADO</p>
+        </footer>
+        <a href="#home-section"><button class="top-btn"><i class="bi bi-arrow-up"></i></button></a>
+        
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
