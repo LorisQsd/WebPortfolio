@@ -642,9 +642,6 @@ body {
 /* MEDIA QUERIES */
 
 @media (max-width: 1024px){
-    .divider:nth-child(2) {
-        display: none;
-    }
 
     .divider {
         width: 20vw;
