@@ -715,7 +715,12 @@ body {
         height: 100vh;
         gap: 4rem;
         position: relative;
-        top: 50px;
+        top: 30px;
+    }
+
+    .divider:nth-child(2) {
+        position: relative;
+        top: 30px;
     }
 
     /* ABOUT RESP S */
