@@ -642,6 +642,10 @@ body {
 /* MEDIA QUERIES */
 
 @media (max-width: 1024px){
+    .divider:nth-child(2) {
+        display: none;
+    }
+
     .divider {
         width: 20vw;
     }
@@ -712,15 +716,12 @@ body {
     }
     .home {
         padding: 0;
-        height: 100vh;
+        height: 90vh;
         gap: 4rem;
         position: relative;
         top: 30px;
     }
 
-    .divider:nth-child(2) {
-        display: none;
-    }
 
     /* ABOUT RESP S */
     .about, .skills {
