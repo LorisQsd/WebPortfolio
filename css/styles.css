@@ -59,13 +59,14 @@ body {
 }
 
 .menu__link {
+    font-size: 1.2rem;
     padding: 0.5rem;
     transition: 300ms;
 }
 
 .menu__link:hover {
     border-bottom: 1px solid var(--white);
-    color: var(--text-purple);
+    color: var(--text-yellow);
 }
 
 .header__contact-link {
