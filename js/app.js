@@ -18,12 +18,7 @@ function displayTitles(){
 }
 
 const logo = document.querySelector(".home__logo")
-setTimeout(addActive(logo,1000))
-
-function addActive(element, time) {
-    setTimeout(()=> {element.classList.add("active")}, time)
-    
-}
+setTimeout(setTimeout(()=> {logo.classList.add("active")}, 1000))
 
 // INTERSECTION OBSERVER
 const main = document.querySelector("main")
