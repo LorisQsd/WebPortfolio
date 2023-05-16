@@ -712,7 +712,8 @@ body {
     }
     .home {
         padding: 0;
-        margin: 3rem 0;
+        height: 100vh;
+        gap: 4rem;
     }
 
     /* ABOUT RESP S */
