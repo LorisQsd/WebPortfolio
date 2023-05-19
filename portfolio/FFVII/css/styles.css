@@ -1,0 +1,248 @@
+:root {
+    --red-color: #c80000;
+    --gray-color: #666;
+    --lightgray-color: #ccc;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.sold-text {
+    position: fixed;
+    top: 50%;
+    left: -1rem;
+    transform: translateY(-50%);
+
+    background-color: var(--red-color);
+    color: white;
+
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    
+    text-transform: uppercase;
+    font-weight: bold;
+
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    border-radius: 0 0.3rem 0.3rem 0;
+
+    transition: 300ms;
+}
+
+.sold-text:hover {
+    transform: translate(1rem, -50%);
+}
+
+/* HEADER */
+
+.header {
+    height: 3.75rem;
+    background-color: var(--red-color);
+    color: white;
+    padding-left: 3.1rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.header-title span {
+    font-weight: 500;
+    font-size: 0.5em;
+}
+
+/* MAIN */
+/* HEADER MAIN */
+.header-main {
+    background-color: var(--gray-color);
+    color: white;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    position: sticky;
+    z-index: 100;
+}
+
+.main-title {
+    font-size: 1rem;
+}
+
+.main-title em {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* SECTION MAIN */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 1.25rem clamp(3.12rem, 10vw, 12.5rem);
+}
+
+.card {
+    width: 18.75rem;
+    border: 1px solid var(--lightgray-color);
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.img-legend {
+    color: var(--lightgray-color);
+    font-weight: bold;
+    margin: 0.3rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-top: 1px solid var(--lightgray-color);
+    padding: 1rem 0;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.add-cart {
+    margin-top: 2rem;
+    padding: 0 0.6rem;
+    background-color: var(--red-color);
+    color: white;
+    height: 3.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 300ms;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    transform: scale(1.1);
+}
+
+.price-detail {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.6rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+}
+
+.current-price {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.divider {
+    height: 0.75rem;
+    width: 100%;
+    background-color: red;
+    background-image: url('../images/deco.png');
+}
+
+.card-content {
+    position: relative;
+}
+
+.sold-pastille {
+    position: absolute;
+    right: 0;
+
+    border-radius: 3rem;
+    border: 5px solid lightgray;
+    background-color: #666;
+    
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+    width: 6rem;
+    aspect-ratio: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
+.footer {
+    height: 2.5rem;
+    background-color: var(--gray-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* BONUS */
+.header-main {
+    top: 3.75rem;
+}
+
+.new-pastille {
+    background-color: var(--red-color);
+
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.2);
+
+    position: absolute;
+    top: -5%;
+    left: -10%;
+}
+
+/* ANIMATION */
+/* L'animation est juste pour le fun */
+/* .sold-text{
+    animation: sold infinite alternate ease-in-out 500ms;
+}
+
+@keyframes sold {
+    from {
+        background-color: #F0F;
+        color: black;
+    }
+    to {
+        color: white;
+        background-color: var(--red-color);
+    }
+} */
+
+@media (max-width: 350px) {
+    .header {
+        padding-left: 0rem;
+        justify-content: center;
+    }
+    .sold-pastille {
+        width: 4rem;
+        font-size: 1rem;
+    }
+}
