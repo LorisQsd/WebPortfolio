@@ -19,7 +19,6 @@
 body {
     font-family: "Poppins", sans-serif;
     color: var(--white);
-    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -45,8 +44,9 @@ body {
     padding: 0 2rem;
     font-weight: 500;
     letter-spacing: 1px;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
+    top: 0px;
     border-bottom: 2px solid var(--white);
     z-index: 100;
 }
@@ -742,7 +742,13 @@ body {
     /* EXPERIENCE RESP S */
     .experience__timeline {
         padding: 3rem 2rem;
+        align-items: center;
     }
+
+    .experience__container:nth-child(even) {
+        align-self: auto;
+    }
+
     .experience__container::before {
         display: none;
     }
@@ -765,7 +771,7 @@ body {
 
     .contact__right, .contact__left {
         padding: 0;
-        width: 80%;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -785,11 +791,11 @@ body {
 
 .home__logo {
     opacity: 0;
-    transition: 1000ms;
+    transition: 4s;
 }
 
 .home__subtitle, .home__title, .home__subtitle {
-    animation: 0.2s ease-in slide-in;
+    animation: 1s ease-in slide-in;
     opacity: 0;
 }
 
@@ -798,11 +804,11 @@ body {
 }
 
 .home__title {
-    animation-delay: 0.65s;
+    animation-delay: 1s;
 }
 
 .home__subtitle:last-child {
-    animation-delay: 0.8s;
+    animation-delay: 1.5s;
 }
 
 @keyframes slide-in {

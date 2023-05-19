@@ -12,13 +12,13 @@ function displayTitles(){
             setTimeout(()=> {
                 titles[i].classList.add("active");
     
-            },i * 150)
+            },i * 500)
         }
     }, 500);
 }
 
 const logo = document.querySelector(".home__logo")
-setTimeout(setTimeout(()=> {logo.classList.add("active")}, 1000))
+setTimeout(setTimeout(()=> {logo.classList.add("active")}, 2000))
 
 // INTERSECTION OBSERVER
 const main = document.querySelector("main")
