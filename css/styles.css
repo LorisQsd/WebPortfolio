@@ -61,13 +61,14 @@ body {
     gap: 1rem;
 }
 
-.menu__link {
+.menu__item {
     font-size: 1.2rem;
     padding: 0.5rem;
     transition: 300ms;
 }
 
-.menu__link:hover {
+.menu__item:hover {
+    transform: scale(1.05);
     border-bottom: 1px solid var(--white);
     color: var(--text-yellow);
 }
@@ -76,6 +77,7 @@ body {
     background-image: var(--purple-gradient);
     padding: 1rem 2rem;
     border-radius: 0.5rem;
+    border: 3px solid rgba(255,255,255,0.5);
     transition: transform 300ms;
 }
 
@@ -794,21 +796,21 @@ body {
     transition: 4s;
 }
 
-.home__subtitle, .home__title, .home__subtitle {
-    animation: 1s ease-in slide-in;
+.home__subtitle, .home__title {
     opacity: 0;
+    animation: 1s ease-in slide-in;
 }
 
 .home__subtitle {
-    animation-delay: 0.5s;
+    animation-delay: 0.45s;
 }
 
 .home__title {
-    animation-delay: 1s;
+    animation-delay: 0.95s;
 }
 
 .home__subtitle:last-child {
-    animation-delay: 1.5s;
+    animation-delay: 1.45s;
 }
 
 @keyframes slide-in {

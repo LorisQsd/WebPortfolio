@@ -2,7 +2,6 @@ const app = {
     // Sélecteurs
     firstSubtitle: document.querySelector(".home__subtitle"),
     title: document.querySelector(".home__title"),
-    
     secondSubtitle: document.querySelector(".home__subtitle:last-child"),
     logo: document.querySelector(".home__logo"),
     sections: document.querySelector("main").querySelectorAll("section"),
@@ -37,7 +36,6 @@ const app = {
             for(let i=0; i<titles.length; i++) {
                 setTimeout(()=> {
                     titles[i].classList.add("active");
-        
                 },i * 500)
             }
         }, 500);
