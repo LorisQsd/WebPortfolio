@@ -5,7 +5,9 @@ const app = {
     secondSubtitle: document.querySelector(".home__subtitle:last-child"),
     logo: document.querySelector(".home__logo"),
     sections: document.querySelector("main").querySelectorAll("section"),
+    header: document.querySelector(".header"),
 
+    // Variables
     
     // Observer
     observer: new IntersectionObserver((entries) => {
@@ -26,10 +28,24 @@ const app = {
         app.displayTitles();
         setTimeout(setTimeout(()=> {app.logo.classList.add("active")}, 2000));
         app.sections.forEach(el => {app.observer.observe(el)});
+        app.handleHeader();
     },
 
     // Fonctions
-    
+    handleHeader(){
+        let scrollPos = 0;
+        setInterval(function() {
+            if (window.scrollY != scrollPos) {
+                if (window.scrollY > scrollPos){
+                    scrollPos = window.scrollY;
+                    app.header.classList.add("header--hidden");
+                } else {
+                    scrollPos = window.scrollY;
+                    app.header.classList.remove("header--hidden");
+                }
+            }
+        },250)
+    },
     displayTitles(){
         const titles = [app.firstSubtitle, app.title, app.secondSubtitle];
         setTimeout(() => {

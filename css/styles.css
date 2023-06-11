@@ -50,6 +50,11 @@ body {
     top: 0px;
     border-bottom: 2px solid var(--white);
     z-index: 100;
+    transition: transform ease-out 300ms;
+}
+
+.header--hidden {
+    transform: translateY(-100%);
 }
 
 .header__logo {
@@ -720,6 +725,7 @@ body {
         border-bottom: none;
         background-color: transparent;
     }
+    
 
     /* HOME RESP S */
     .home__left {
