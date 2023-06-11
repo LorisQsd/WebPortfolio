@@ -6,6 +6,7 @@ const app = {
     logo: document.querySelector(".home__logo"),
     sections: document.querySelector("main").querySelectorAll("section"),
     header: document.querySelector(".header"),
+    menuItems: document.querySelector(".menu__list").querySelectorAll(".menu__item"),
 
     // Variables
     
@@ -15,7 +16,7 @@ const app = {
             if (entry.isIntersecting){
                 for(let i=0; i<entry.target.children.length; i++) {
                     
-                    setTimeout(()=> {entry.target.children[i].classList.add("active")},i * 500)
+                    setTimeout(()=> {entry.target.children[i].classList.add("active")},i * 250)
                 }
             }
         }
@@ -26,7 +27,7 @@ const app = {
 
     init() {
         app.displayTitles();
-        setTimeout(setTimeout(()=> {app.logo.classList.add("active")}, 2000));
+        setTimeout(()=> {app.logo.classList.add("active")}, 1750);
         app.sections.forEach(el => {app.observer.observe(el)});
         app.handleHeader();
     },
