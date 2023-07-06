@@ -41,7 +41,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    min-height: 6rem;
     padding: 0 2rem;
     font-weight: 500;
     letter-spacing: 1px;
@@ -94,8 +94,7 @@ body {
 /* MAIN */
 /* HOME LEFT*/
 .home {
-    
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +178,7 @@ body {
 .rounded-text {
     position: absolute;
     width: 250%;
-    left: -125px;
+    left: -148px;
     top: -150px;
     animation: 15s linear infinite;
     animation-name: test;
@@ -684,8 +683,8 @@ body {
         width: 150px;
     }
     .rounded-text{
-        left: -97px;
-        top: -93px;
+        left: -112px;
+        top: -104px;
     }
 
     /* SKILLS RESP M*/
@@ -732,8 +731,8 @@ body {
         width: 80vw;
     }
     .home {
-        padding: 0;
-        height: 90vh;
+        padding: 5rem 0;
+        min-height: 90vh;
         gap: 4rem;
         position: relative;
         top: 30px;
